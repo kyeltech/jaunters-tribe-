@@ -1,0 +1,241 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #555;
+    color: #FDD522;
+}
+
+ .highlighted { 
+    background-color: #E04438;
+    color: white;
+    opacity: 0.65;
+} 
+
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: rgba(200, 187, 0, 0.788);
+    
+    
+
+}
+
+a:hover {
+    opacity: 1;
+    color:  rgba(200, 187, 0, 0.788);
+    
+}
+
+li:hover {
+    color: seashell;
+}
+
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(253, 150, 90, 0.877);
+    opacity: 1 ;
+}
+
+section:not(.hero):nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 80px;
+    justify-content: center;
+}
+
+
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #FD975A;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+section h3.title {
+    text-transform: capitalize;
+    font: bold 32px sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section p {
+    max-width: 775px;
+    line-height: 2;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+
+/* Hero Styles */
+
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: rgba(253, 150, 90, 0.877);
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font: bold 60px sans-serif;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.hero h3 {
+    font: normal 28px sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+}
+
+.hero-content-area {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slideFade 1s forwards;
+}
+
+@keyframes slideFade {
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/* Header styles */
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    animation: 1s fadeIn 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+     100% {
+        opacity: 1;
+    }
+}
+
+header h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+header nav {
+    display: flex;
+    margin-right: -15px;
+    font-weight: 600;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+
+
+/* Destinations Section */
+
+.contact,
+.packages,
+.testimonials,
+.destinations {
+    color: #483C53;
+}
+
+.destinations .grid li {
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.destinations .grid li.small {
+    flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+    flex-basis: 70%;
+}
+
+
+/* Packages Section Styles */
+
+.packages .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+.packages .grid li i {
+    color: #8c9c99 ;
+}
+
+
+.packages .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+
+/* Testimonials Section */
+
+
+.testimonials .quote {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+}
